@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.ViewTable">
+    <children>
+        <TabPane layoutX="323.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" />
+        <TextFlow layoutX="323.0" layoutY="206.0" prefHeight="200.0" prefWidth="200.0" />
+        <TableView fx:id="ViewTable" prefHeight="406.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="driver" prefWidth="202.39996337890625" text="Водитель" />
+            <TableColumn fx:id="type" prefWidth="139.2000732421875" text="Тип техники" />
+            <TableColumn fx:id="number" prefWidth="144.800048828125" text="Номер " />
+            <TableColumn fx:id="nbrStorage" prefWidth="115.20001220703125" text="Номер склада" />
+         </columns>
+        </TableView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.TextFlow?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Operator.CarTable">
+   <children>
+      <TabPane layoutX="323.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" />
+      <TextFlow layoutX="323.0" layoutY="206.0" prefHeight="200.0" prefWidth="200.0" />
+      <TableView fx:id="CarTable" prefHeight="406.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="columnType" prefWidth="240.79998779296875" text="Тип машины" />
+            <TableColumn fx:id="columnNumber" prefWidth="102.4000244140625" text="Номер" />
+            <TableColumn fx:id="columnDriver" prefWidth="99.20001220703125" text="Водитель" />
+            <TableColumn fx:id="columnStorage" minWidth="5.5999755859375" prefWidth="157.5999755859375" text="Номер склада" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
